@@ -51,9 +51,6 @@ You can add new regex patterns by modifying the template, like so:
       regex: 
         - 'xox[baprs]-[0-9a-zA-Z]{10,48}'
 
-Contributing
-
-Contributions, suggestions, and bug reports are welcome! Feel free to open an issue or submit a pull request.
 
 
 Acknowledgements
