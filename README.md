@@ -4,7 +4,7 @@
 
 Included Files
 
-![Example Image](https://drive.google.com/file/d/1rM2ClTQ6ViwMt3GTI6MOKbzzjg4hH7YZ/view?usp=sharing)
+![Example Image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9B5FPddwK9D28_qLzW2Prn2UqlFM9yUimv4mgfePogaHB-3CYZtzUTNBtY_HDQMkv7ROuDI5eEBE_tBQmDYB48l5AJHSyBTqEXAdYlozphhZUJ3NCeZnclOoFp7FFCdsixxWMOq4_OCJEXXUtPJ1DuGO4W_Ruf593U6lnUq9k6Eb4cmUEo_-V6nsVXhDa/w640-h327/nuclei.png)
 
 + Clone the Repository:
 
