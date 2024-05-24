@@ -29,6 +29,6 @@ This will initiate the scan using Nuclei on the provided URLs.
 
 Example urls.txt Content:
 
-https://example.com/script1.js
-https://example.com/script2.js
-https://example.com/script3.js
+    https://example.com/script1.js
+    https://example.com/script2.js
+    https://example.com/script3.js
