@@ -8,11 +8,10 @@ Included Files
 
 Instructions
 
-    Clone the Repository:
+Clone the Repository:
 
-
-git clone https://github.com/yourusername/nuclei-js-sensitive-data.git
-cd nuclei-js-sensitive-data
+    git clone https://github.com/yourusername/nuclei-js-sensitive-data.git
+    cd nuclei-js-sensitive-data
 
 Prepare URLs:
 
