@@ -7,7 +7,7 @@ Included Files
 Clone the Repository:
 
     git clone https://github.com/dineshpathro90/SecretFinder2.o.git
-    cd nuclei-js-sensitive-data
+    cd SecretFinder2.o
 
 
 Prepare URLs:
