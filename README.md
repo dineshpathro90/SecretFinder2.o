@@ -10,7 +10,6 @@ Instructions
 
     Clone the Repository:
 
-    bash
 
 git clone https://github.com/yourusername/nuclei-js-sensitive-data.git
 cd nuclei-js-sensitive-data
