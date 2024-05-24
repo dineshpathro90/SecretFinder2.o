@@ -3,7 +3,6 @@ Nuclei Template: Detecting Sensitive Data in JavaScript URLs
 This repository provides tools for identifying sensitive data in JavaScript URLs using Nuclei.
 Included Files
 
-Instructions
 
 Clone the Repository:
 
