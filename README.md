@@ -49,4 +49,4 @@ You can add new regex patterns by modifying the template, like so:
     - type: regex 
       name: slack_token 
       regex: 
-    - 'xox[baprs]-[0-9a-zA-Z]{10,48}'
+        - 'xox[baprs]-[0-9a-zA-Z]{10,48}'
