@@ -1,0 +1,119 @@
+id: find-js-sensitive-data
+info:
+  name: Detect Sensitive Data in JavaScript URLs
+  author: Dinesh_Pathro
+  severity: info
+  tags: exposure,apikeys
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/**.js"
+      - "{{BaseURL}}/**.json"
+      - "{{BaseURL}}/**.html"
+    extractors:
+      - type: regex
+        name: google_api
+        regex:
+          - 'AIza[0-9A-Za-z-_]{35}'
+      - type: regex
+        name: google_captcha
+        regex:
+          - '6L[0-9A-Za-z-_]{38}'
+          - '^6[0-9a-zA-Z_-]{39}$'
+      - type: regex
+        name: google_oauth
+        regex:
+          - 'ya29\.[0-9A-Za-z\-_]+'
+      - type: regex
+        name: amazon_aws_access_key_id
+        regex:
+          - 'A[SK]IA[0-9A-Z]{16}'
+      - type: regex
+        name: amazon_mws_auth_token
+        regex:
+          - 'amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+      - type: regex
+        name: amazon_aws_url
+        regex:
+          - 's3\.amazonaws.com[/]+'
+          - '[a-zA-Z0-9_-]*\.s3\.amazonaws.com'
+      - type: regex
+        name: facebook_access_token
+        regex:
+          - 'EAACEdEose0cBA[0-9A-Za-z]+'
+      - type: regex
+        name: authorization_basic
+        regex:
+          - 'basic\s*[a-zA-Z0-9=:_\+\/-]+'
+      - type: regex
+        name: authorization_bearer
+        regex:
+          - 'bearer\s*[a-zA-Z0-9_\-\.=:_\+\/]+'
+      - type: regex
+        name: authorization_api
+        regex:
+          - 'api[key|\s*]+[a-zA-Z0-9_\-]+'
+      - type: regex
+        name: mailgun_api_key
+        regex:
+          - 'key-[0-9a-zA-Z]{32}'
+      - type: regex
+        name: twilio_api_key
+        regex:
+          - 'SK[0-9a-fA-F]{32}'
+      - type: regex
+        name: twilio_account_sid
+        regex:
+          - 'AC[a-zA-Z0-9_\-]{32}'
+      - type: regex
+        name: twilio_app_sid
+        regex:
+          - 'AP[a-zA-Z0-9_\-]{32}'
+      - type: regex
+        name: paypal_braintree_access_token
+        regex:
+          - 'access_token\$production\$[0-9a-z]{16}\$[0-9a-f]{32}'
+      - type: regex
+        name: square_oauth_secret
+        regex:
+          - 'sq0csp-[0-9A-Za-z\-_]{43}'
+          - 'sq0[a-z]{3}-[0-9A-Za-z\-_]{22,43}'
+      - type: regex
+        name: square_access_token
+        regex:
+          - 'sqOatp-[0-9A-Za-z\-_]{22}'
+          - 'EAAA[a-zA-Z0-9]{60}'
+      - type: regex
+        name: stripe_standard_api
+        regex:
+          - 'sk_live_[0-9a-zA-Z]{24}'
+      - type: regex
+        name: stripe_restricted_api
+        regex:
+          - 'rk_live_[0-9a-zA-Z]{24}'
+      - type: regex
+        name: github_access_token
+        regex:
+          - '[a-zA-Z0-9_-]*:[a-zA-Z0-9_\-]+@github\.com*'
+      - type: regex
+        name: rsa_private_key
+        regex:
+          - '-----BEGIN RSA PRIVATE KEY-----'
+      - type: regex
+        name: ssh_dsa_private_key
+        regex:
+          - '-----BEGIN DSA PRIVATE KEY-----'
+      - type: regex
+        name: ssh_ec_private_key
+        regex:
+          - '-----BEGIN EC PRIVATE KEY-----'
+      - type: regex
+        name: pgp_private_block
+        regex:
+          - '-----BEGIN PGP PRIVATE KEY BLOCK-----'
+      - type: regex
+        name: json_web_token
+        regex:
+          - 'ey[A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*$'
+
