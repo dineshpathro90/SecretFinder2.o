@@ -24,3 +24,5 @@ Execute the bash script, providing the urls.txt file as an argument:
 bash
 
     ./run_nuclei.sh urls.txt
+This will initiate the scan using Nuclei on the provided URLs.
+
