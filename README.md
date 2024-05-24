@@ -10,9 +10,13 @@ Included Files
 +     cd SecretFinder2.o
 
 
+
+
 + Prepare URLs:
 
 + Add your JavaScript URLs to a text file named urls.txt, with each URL on a separate line.
+
+
 
 
 + Run the Bash Script:
@@ -30,9 +34,13 @@ Example urls.txt Content:
 +     https://example.com/script2.js
 +     https://example.com/script3.js
 
+
+
 Requirements
 
 + Ensure you have Nuclei installed and accessible in your system's PATH.
+
+
 
 Customization
 
@@ -46,6 +54,8 @@ Example Customization
 +       name: slack_token 
 +       regex: 
 +         - 'xox[baprs]-[0-9a-zA-Z]{10,48}'
+
+
 
 Acknowledgements
 +   
