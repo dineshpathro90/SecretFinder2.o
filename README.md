@@ -74,16 +74,3 @@ yaml
   name: slack_token
   regex:
     - 'xox[baprs]-[0-9a-zA-Z]{10,48}'
-
-Contributing
-
-If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. Contributions are welcome!
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-Acknowledgements
-
-    Nuclei by ProjectDiscovery for providing a powerful tool for fast and customizable vulnerability scanning.
-    All contributors and the open-source community for their invaluable work and support.
-
-By following these instructions, you should be able to use the Nuclei template and script to effectively scan for sensitive data in JavaScript URLs. If you encounter any problems or have any questions, please feel free to reach out.
