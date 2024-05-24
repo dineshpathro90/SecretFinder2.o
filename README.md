@@ -17,10 +17,7 @@ Run the Bash Script:
 
 Execute the bash script, providing the urls.txt file as an argument:
 
-Run the Bash Script:
-
-Execute the bash script, providing the urls.txt file as an argument:
 
 bash
 
-./run_nuclei.sh urls.txt
+    ./run_nuclei.sh urls.txt
