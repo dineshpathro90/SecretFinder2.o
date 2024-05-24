@@ -54,3 +54,10 @@ You can add new regex patterns by modifying the template, like so:
 Contributing
 
 Contributions, suggestions, and bug reports are welcome! Feel free to open an issue or submit a pull request.
+
+
+Acknowledgements
+    Nuclei by ProjectDiscovery for providing an efficient and flexible security scanner.
+    Thanks to all contributors and the open-source community for their support and contributions.
+By following these instructions, you'll be able to leverage the Nuclei template and script to effectively scan for sensitive data in JavaScript URLs. If you encounter any issues or have questions, don't hesitate to reach out.
+
