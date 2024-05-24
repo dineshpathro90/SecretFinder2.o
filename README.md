@@ -32,3 +32,8 @@ Example urls.txt Content:
     https://example.com/script1.js
     https://example.com/script2.js
     https://example.com/script3.js
+
+
+Requirements
+
+Ensure you have Nuclei installed and accessible in your system's PATH. You can install Nuclei by following the installation instructions provided here.
