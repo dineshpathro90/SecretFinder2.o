@@ -8,10 +8,6 @@ Files
 
 Usage
 
-    Clone the repository:
-
-    bash
-
 git clone https://github.com/yourusername/nuclei-js-sensitive-data.git
 cd nuclei-js-sensitive-data
 
