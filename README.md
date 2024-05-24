@@ -36,4 +36,17 @@ Example urls.txt Content:
 
 Requirements
 
-Ensure you have Nuclei installed and accessible in your system's PATH. You can install Nuclei by following the installation instructions provided here.
+Ensure you have Nuclei installed and accessible in your system's PATH.
+
+
+Customization
+
+The find-js-sensitive-data.yaml template can be customized to include additional patterns or modify existing ones. The template relies on regex patterns to identify various types of sensitive data such as API keys, access tokens, and private keys.
+Example Customization
+
+You can add new regex patterns by modifying the template, like so:
+
+    - type: regex 
+  name: slack_token 
+  regex: 
+    - 'xox[baprs]-[0-9a-zA-Z]{10,48}'
