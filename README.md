@@ -9,9 +9,12 @@ Clone the Repository:
     git clone https://github.com/dineshpathro90/SecretFinder2.o.git
     cd nuclei-js-sensitive-data
 
+
 Prepare URLs:
 
 Add your JavaScript URLs to a text file named urls.txt, with each URL on a separate line.
+
+
 
 Run the Bash Script:
 
